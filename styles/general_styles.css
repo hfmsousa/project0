@@ -1,5 +1,135 @@
+/* ------------------------------- GENERAL --------------------------------------*/
+/*QuickReset*/
+*{
+    margin:0;
+    /* box-sizing:border-box; */
+}
+
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: gray;
     color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
 }
+
+p {
+    padding-top: 10px;
+    text-align: justify;
+}
+
+table {
+    float: left;
+    table-layout: auto;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    /* border: 2px solid black; */
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: lightgray;
+    color: rgb(82, 82, 82);
+}
+
+/* ------------------------------- HEADER --------------------------------------*/
+.header {
+    height: 50px;
+    top: 0;
+    display: flex;
+    text-align:center;
+    background-color: white;
+    /* border: 2px solid black; */
+}
+
+.header_link {
+    font-size: 20px;
+    text-decoration: none;
+    color: tomato;
+    text-align: center;
+    margin:auto;
+    /* border: 2px solid black; */
+}
+
+.header_link:hover {
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+}
+
+/* ------------------------------- SECTION --------------------------------------*/
+.content {
+    margin-bottom: 20px;
+    padding: 20px;
+    flex: 1;
+    overflow: auto;
+}
+
+.content > h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.content_link {
+    /* font-size: 16px; */
+    background-color: none;
+    text-decoration-style: solid;
+    color: white;
+    /* border: 2px solid black; */
+}
+
+.content_link:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: yellow;
+}
+
+.contact_link {
+    font-size: 16px;
+    background-color: none;
+    text-decoration: none;
+    color: white;
+    /* border: 2px solid black; */
+}
+
+.contact_link:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: yellow;
+}
+
+@media (max-width: 900px) {
+    .hide {
+        display: none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse; 
+    }
+}
+
+/* ------------------------------- FOOTER --------------------------------------*/
+.footer {
+    height: 25px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 3px solid green; */
+}
+
+.footer_text {
+    color: tomato;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
